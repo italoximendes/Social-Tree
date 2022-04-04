@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #faf7fd;
+  --purple: #bb99dd;
+  --purple-hover: #a663ee;
+  --social-links-hover: #eee3fa;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--body-bg-color);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 22.87rem;
+  padding: 1.25rem;
+  margin-top: 12.56rem;
+  margin-bottom: 12.62rem;
+}
+
+.avatar img {
+  width: 13.31rem;
+  height: 13.31rem;
+  border-radius: 50%;
+  padding: 3px;
+  border: 2px solid var(--purple);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.userName {
+  font-size: 1rem;
+  margin: 0.93rem 0;
+  color: var(--purple);
+}
+
+.userName:hover {
+  color: var(--purple-hover);
+}
+
+.externalLinks ul li a {
+  width: 20.37rem;
+  height: 3.06rem;
+  border: 2px solid var(--purple);
+  border-radius: 4px;
+  margin-top: 1rem;
+
+  color: var(--purple);
+  font-size: 1rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.externalLinks ul li a:hover {
+  color: var(--purple-hover);
+  border: 2px solid var(--purple-hover);
+}
+
+.socialLinks ul {
+  margin-top: 4.25rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.socialLinks ul li a img {
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.socialLinks ul li a img:hover {
+  transition: 0.4s;
+  background: var(--social-links-hover);
+}
